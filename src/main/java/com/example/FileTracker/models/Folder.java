@@ -67,4 +67,8 @@ public class Folder {
         this.files = files;
     }
 
+    public void addFile(File file) {
+        this.files.add(file);
+    }
+
 }
