@@ -46,21 +46,6 @@ public class DataLoader implements ApplicationRunner {
 
         File maintenance = new File("Maintenance", "pdf", 150, admin);
         fileRepository.save(maintenance);
-
-
-        hr.addFile(staffDetails);
-        folderRepository.save(hr);
-
-        admin.addFile(maintenance);
-        folderRepository.save(admin);
-
-        harry.addFolder(hr);
-        userRepository.save(harry);
-
-        ron.addFolder(admin);
-        userRepository.save(ron);
-
     }
-
 
 }
